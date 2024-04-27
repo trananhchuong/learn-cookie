@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Home page</h1>
+
+    <script>
+      // Khai báo cookie
+      // document.cookie = "username=chapter";
+
+      // Quy định cookie chỉ áp dụng cho một domain cụ thể
+      // document.cookie = "email=chapter@gmail.com; path=/bai-viet";
+
+      // Quy định thời gian sống của cookie
+      // Function to set cookie with expiration time
+      //   function setCookie(name, value, seconds) {
+      //     var date = new Date();
+      //     date.setTime(date.getTime() + seconds * 1000);
+      //     var expires = "; expires=" + date.toUTCSstring();
+      //     document.cookie = name + "=" + value + expires + "; path=/";
+      //   }
+
+      const date = new Date();
+      date.setTime(Date.now() + 2000);
+      console.log("🚀 ~ date:", date);
+      // document.cookie = `email=chapter@gmail.com; expires=${date.toUTCString()}`;
+      document.cookie = `email=chapter@gmail.com; max-age=5`;
+    </script>
+  </body>
+</html>
